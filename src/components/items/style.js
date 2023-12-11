@@ -9,10 +9,11 @@ export const ItemContainer = styled.div`
     align-items: center;
 
     .itemAnimationContainer{
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 300px;
+        width: 350px;
         height: 80px;
         background-color: blue;
         color: black;

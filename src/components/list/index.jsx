@@ -4,6 +4,7 @@ import { Reorder } from "framer-motion";
 import { ListContainer } from "./style";
 
 export function List(){
+   
     const initialItems = [
      {name:"🍅 Tomato", id:1, status:"não feito", date:"22/11"},
      {name:"🥒 Cucumber", id:2, status:"não feito", date:"22/11"},
@@ -12,7 +13,7 @@ export function List(){
     const [items, setItems] = useState(initialItems);
     return(
         <ListContainer> 
-          <Reorder.Group axis="y" onReorder={setItems} values={items} className="animationContainer">
+          <Reorder.Group axis="y" onReorder={setItems} values={items} className="animationContainer" >
             {items.map((item) => (
                 <Item key={item.id} item={item} />
             ))}

@@ -4,15 +4,16 @@ export const HomePageContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     width: 100vw;
-    height: 100vh;
+    height: 190vh;
+    gap: 100px;
 `
 export const HeaderHomeContainerStyle = styled.header`
     background-color: black;
     width: 100vw;
     height: 10vh;
-    max-height: 90px;
+    max-height: 150px;
     display: flex;
     justify-content: center;
 
@@ -26,8 +27,11 @@ export const HeaderHomeContainerStyle = styled.header`
 `
 export const MainHomeContainer = styled.main`
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
     width: 100vw;
     height: 90vh;
     background-color: #ffffff;
+    gap: 50px;
 `
